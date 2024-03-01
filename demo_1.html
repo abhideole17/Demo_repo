@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-semibold">Food Ordering</h1>
+          <nav class="flex space-x-4">
+            <!-- Login/Signup button -->
+            <a href="login.html" class="hover:bg-gray-600 px-3 py-2 rounded">Login/Signup</a>
+            <!-- Cart icon -->
+            <a href="#" class="relative hover:bg-gray-600 px-3 py-2 rounded">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7a3 3 0 0 1 6 0m5 0a5 5 0 0 1-10 0M3 7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7z"></path>
+              </svg>
+              <span class="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full">3</span>
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown relative">
+              <a href="#" class="hover:bg-gray-600 px-3 py-2 rounded">Menu</a>
+              <ul class="dropdown-menu hidden absolute bg-gray-800 text-white pt-1">
+                <li><a href="#" class="block px-4 py-2">Biryani</a></li>
+                <li><a href="#" class="block px-4 py-2">Butter Chicken</a></li>
+                <li><a href="#" class="block px-4 py-2">Paneer Tikka</a></li>
+                <li><a href="#" class="block px-4 py-2">Masala Dosa</a></li>
+                <li><a href="#" class="block px-4 py-2">Chole Bhature</a></li>
+              </ul>
+            </div>
+            <!-- Add more dropdown items here -->
+          </nav>
+        </div>
+      </header>
+
+  <main class="container mx-auto py-8">
+    <h2 class="text-3xl font-semibold mb-4">Featured Indian Food Items</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Indian Food Items -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+        <img src="biryani.jpg" alt="Biryani" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Biryani</h3>
+          <p class="text-gray-600 mb-2">Fragrant rice cooked with spices and meat/vegetables.</p>
+          <p class="text-gray-700 font-bold">Price: ₹200</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+        <img src="butter-chicken.jpg" alt="Butter Chicken" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Butter Chicken</h3>
+          <p class="text-gray-600 mb-2">Creamy chicken curry with a rich tomato-based sauce.</p>
+          <p class="text-gray-700 font-bold">Price: ₹250</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+        <img src="paneer-tikka.jpg" alt="Paneer Tikka" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Paneer Tikka</h3>
+          <p class="text-gray-600 mb-2">Marinated paneer cubes grilled to perfection. Marinated paneer cubes grilled to perfection.</p>
+          <p class="text-gray-700 font-bold">Price: ₹180</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+        <img src="masala-dosa.jpg" alt="Masala Dosa" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Masala Dosa</h3>
+          <p class="text-gray-600 mb-2">Crispy rice crepe filled with spicy potato filling.</p>
+          <p class="text-gray-700 font-bold">Price: ₹150</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+        <img src="chole-bhature.jpg" alt="Chole Bhature" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Chole Bhature</h3>
+          <p class="text-gray-600 mb-2">Spicy chickpea curry served with fried bread.</p>
+          <p class="text-gray-700 font-bold">Price: ₹180</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Add more Indian food items here -->
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Food Ordering. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript to handle dropdown functionality
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', () => {
+        dropdown.querySelector('.dropdown-menu').classList.remove('hidden');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        dropdown.querySelector('.dropdown-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="chatbot"
+  agent-id="1f74c10c-d707-4f53-8763-d4b99e4f3b25"
+  language-code="en"
+></df-messenger>
+</body>
+</html>
